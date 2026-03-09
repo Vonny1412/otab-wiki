@@ -24,8 +24,10 @@
 
         <h1>Greyling</h1>
         <div class="badge-row">
-          <span class="badge bad">Not tameable</span>
+          <span class="badge good">Tameable</span>
           <span class="badge bad">Not commandable</span>
+          <span class="badge warn">Fed duration: 10 min</span>
+          <span class="badge bad">Defeated: The Elder</span>
         </div>
 
         <h2>Overview</h2>
@@ -33,19 +35,18 @@
           Greyling is a small wild creature of the forest.
         </p>
         <p>
-          It cannot be tamed and cannot reproduce.
+          It can be tamed but cannot reproduce.
           A tamed Greyling can only be obtained by hatching a
           <strong><a href="../Eggs/GreylingBud.html">Greyling Bud</a></strong>.
         </p>
 
         <h2>Feeding</h2>
         <p>
-          Greylings will consume <strong>Yellow Mushrooms</strong>, but this does not
-          start a fed timer and has no effect on taming or reproduction.
+          Greylings consume <strong>Yellow Mushrooms</strong>.
         </p>
         <p>
           Due to the animation used, it looks as if the Greyling simply throws
-          the mushroom away instead of eating it.
+          the mushroom away instead of eating the whole thing.
         </p>
 
         <h2>Aggression</h2>
@@ -160,7 +161,7 @@
 
             <h3>Food (fed duration)</h3>
             <ul class="mini-list">
-              <li>Yellow Mushroom <span class="faded">(–)</span></li>
+              <li>Yellow Mushroom <span class="faded">(100%)</span></li>
             </ul>
 
           </section>
@@ -175,21 +176,34 @@
             <div class="kv">
               <div class="kv-row">
                 <div class="kv-key">Taming time</div>
-                <div class="kv-value">–</div>
+                <div class="kv-value">1800 s (30 min)</div>
               </div>
               <div class="kv-row">
                 <div class="kv-key">Fed duration</div>
-                <div class="kv-value">–</div>
+                <div class="kv-value">600 s (10 min)</div>
               </div>
               <div class="kv-row">
                 <div class="kv-key">Commandable</div>
-                <div class="kv-value"><span class="no">☒ No</span></div>
+                <div class="kv-value"><span class="yes">☑ Yes</span></div>
               </div>
               <div class="kv-row">
                 <div class="kv-key">Interactable</div>
-                <div class="kv-value">Always</div>
+                <div class="kv-value">When not starving</div>
+              </div>
+              <div class="kv-row">
+                <div class="kv-key">Starving grace</div>
+                <div class="kv-value"><span class="muted">Default (x 5)</span></div>
+              </div>
+              <div class="kv-row">
+                <div class="kv-key">Starving begins after</div>
+                <div class="kv-value">3600 s (1 h)</div>
               </div>
             </div>
+
+            <h3>Required global keys</h3>
+            <ul class="mini-list">
+              <li><span>Defeated: The Elder</span></li>
+            </ul>
 
           </section>
 
