@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>OTAB - Greydwarf</title>
+    <link rel="stylesheet" href="../../../assets/style.css">
+  </head>
+  <body>
+    <div class="page">
+      <main class="content article" id="article">
+
+        <nav class="breadcrumb">
+          <a href="../../../../index.html">Of Taming and Breeding</a>
+          <span class="sep">›</span>
+          <a href="../../../index.html">Data</a>
+          <span class="sep">›</span>
+          <a href="../../Forest_GreydwarfFamily.html">Forest – Greydwarf Family</a>
+          <span class="sep">›</span>
+          <span class="current">Creatures</span>
+          <span class="sep">›</span>
+          <span class="current">Greydwarf</span>
+        </nav>
+
+        <h1>Greydwarf</h1>
+        <div class="badge-row">
+          <span class="badge bad">Not tameable</span>
+          <span class="badge bad">Not commandable</span>
+        </div>
+
+        <h2>Overview</h2>
+        <p>
+          Greydwarf is a wild creature of the forest.
+        </p>
+        <p>
+          It cannot be tamed and cannot reproduce.
+          A tamed Greydwarf can only be obtained by hatching a
+          <strong><a href="../Eggs/GreydwarfBud.html">Greydwarf Bud</a></strong>.
+        </p>
+
+        <h2>Feeding</h2>
+        <p>
+          Greydwarfs will consume <strong>Yellow Mushrooms</strong>, but this does not
+          start a fed timer and has no effect on taming or reproduction.
+        </p>
+        <p>
+          Due to the animation used, it looks as if the Greydwarf simply throws
+          the mushroom away instead of eating it.
+        </p>
+
+        <h2>Aggression</h2>
+        <p>
+          Tamed Greys are hostile toward creatures of the <strong>Forest</strong> faction,
+          including all wild Greydwarfs.
+        </p>
+
+      </main>
+      <aside class="sidebar" id="sidebar">
+        <div class="infobox">
+
+          <div class="infobox-head">
+            <div class="infobox-title">Greydwarf</div>
+            <p class="infobox-subtitle"></p>
+          </div>
+
+          <section class="infobox-section">
+
+            <h3>General</h3>
+
+            <div class="kv">
+              <div class="kv-row">
+                <div class="kv-key">Prefab</div>
+                <div class="kv-value"><code>Greydwarf</code></div>
+              </div>
+              <div class="kv-row">
+                <div class="kv-key">Pack</div>
+                <div class="kv-value">Forest – Greydwarf Family</div>
+              </div>
+              <div class="kv-row">
+                <div class="kv-key">Type</div>
+                <div class="kv-value">Creature</div>
+              </div>
+            </div>
+
+          </section>
+
+          <section class="infobox-section">
+
+            <h3>
+              &lt;Character&gt;
+              <span class="component-mode patch">Patch</span>
+            </h3>
+
+            <div class="kv">
+              <div class="kv-row">
+                <div class="kv-key">Group</div>
+                <div class="kv-value">'greydwarf'</div>
+              </div>
+              <div class="kv-row">
+                <div class="kv-key">Faction</div>
+                <div class="kv-value"><span class="muted">Forest</span></div>
+              </div>
+              <div class="kv-row">
+                <div class="kv-key">Attack tamed</div>
+                <div class="kv-value">Never</div>
+              </div>
+              <div class="kv-row">
+                <div class="kv-key">Attacked by tamed</div>
+                <div class="kv-value">Never</div>
+              </div>
+              <div class="kv-row">
+                <div class="kv-key">Attack player</div>
+                <div class="kv-value">Never</div>
+              </div>
+              <div class="kv-row">
+                <div class="kv-key">Attacked by player</div>
+                <div class="kv-value">Never</div>
+              </div>
+              <div class="kv-row">
+                <div class="kv-key">Attack group</div>
+                <div class="kv-value bad">Always</div>
+              </div>
+              <div class="kv-row">
+                <div class="kv-key">Attacked by group</div>
+                <div class="kv-value bad">Always</div>
+              </div>
+              <div class="kv-row">
+                <div class="kv-key">Attack faction</div>
+                <div class="kv-value bad">Always</div>
+              </div>
+              <div class="kv-row">
+                <div class="kv-key">Attacked by faction</div>
+                <div class="kv-value bad">Always</div>
+              </div>
+            </div>
+
+          </section>
+
+          <section class="infobox-section">
+
+            <h3>
+              &lt;MonsterAI&gt;
+              <span class="component-mode patch">Patch</span>
+            </h3>
+
+            <div class="kv">
+              <div class="kv-row">
+                <div class="kv-key">Consume range</div>
+                <div class="kv-value">1 m</div>
+              </div>
+              <div class="kv-row">
+                <div class="kv-key">Search range</div>
+                <div class="kv-value">10 m <span class="muted">(every 60 s)</span></div>
+              </div>
+              <div class="kv-row">
+                <div class="kv-key">Stay near spawn</div>
+                <div class="kv-value"><span class="yes">☑ Yes</span></div>
+              </div>
+            </div>
+
+            <h3>Food (fed duration)</h3>
+            <ul class="mini-list">
+              <li>Yellow Mushroom <span class="faded">(–)</span></li>
+            </ul>
+
+          </section>
+
+          <section class="infobox-section">
+
+            <h3>
+              &lt;Tameable&gt;
+              <span class="component-mode patch">Patch</span>
+            </h3>
+
+            <div class="kv">
+              <div class="kv-row">
+                <div class="kv-key">Taming time</div>
+                <div class="kv-value">–</div>
+              </div>
+              <div class="kv-row">
+                <div class="kv-key">Fed duration</div>
+                <div class="kv-value">–</div>
+              </div>
+              <div class="kv-row">
+                <div class="kv-key">Commandable</div>
+                <div class="kv-value"><span class="no">☒ No</span></div>
+              </div>
+              <div class="kv-row">
+                <div class="kv-key">Interactable</div>
+                <div class="kv-value">Always</div>
+              </div>
+            </div>
+
+          </section>
+
+          <section class="infobox-section">
+
+            <h3>
+              &lt;Procreation&gt;
+              <span class="component-mode remove">Remove</span>
+            </h3>
+
+          </section>
+
+        </div>
+      </aside>
+    </div>
+  </body>
+</html>
