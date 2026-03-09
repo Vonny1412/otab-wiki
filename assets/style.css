@@ -352,5 +352,15 @@ code {
 }
 
 
-
-
+.infobox-icon {
+  width: 64px;
+  height: 64px;
+  display: block;
+  margin: 0 auto 10px auto;
+}
+.infobox-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 1px solid var(--line);
+}
