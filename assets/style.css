@@ -375,3 +375,11 @@ code {
   display: block;
   border-bottom: 1px solid var(--line);
 }
+
+.footer-note {
+  margin-top: 40px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.85rem;
+}
