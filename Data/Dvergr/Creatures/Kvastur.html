@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>OTAB - Kvastur</title>
+    <link rel="stylesheet" href="../../../assets/style.css">
+  </head>
+  <body>
+    <div class="layout">
+      <div class="page">
+        <main class="content article" id="article">
+
+          <nav class="breadcrumb">
+            <a href="../../../index.html">Of Taming and Breeding</a>
+            <span class="sep">›</span>
+            <a href="../../../Data.html">Data</a>
+            <span class="sep">›</span>
+            <a href="../../Dvergr.html">Dvergr</a>
+            <span class="sep">›</span>
+            <span class="current">Creatures</span>
+            <span class="sep">›</span>
+            <span class="current">Kvastur</span>
+          </nav>
+
+          <h1>Kvastur</h1>
+          <div class="badge-row">
+            <span class="badge bar">Not tameable</span>
+            <span class="badge good">Commandable</span>
+          </div>
+
+          <h2>Overview</h2>
+          <p>
+too much trash in your inventory and too lazy to bring the to the Obliterator?
+just throw it on the ground near kvastur and he will wipe it away - Without consideration!
+          </p>
+
+          <h2>Feeding</h2>
+          <p>
+kvastur searches every 10 minutes within a range of 10 meters for any item on the ground to "consume" it.
+          </p>
+
+          <h2>Aggression</h2>
+          <p>
+a tamed kvastur takes not part in any fighting
+          </p>
+
+          <h2><h2>Warning</h2></h2>
+          <p>
+Players need to make sure to drop or let any important item lieing down near kvastur. he will remove just any item.
+          </p>
+
+        </main>
+        <aside class="sidebar" id="sidebar">
+          <div class="infobox">
+
+            <div class="infobox-head">
+              <div class="infobox-title">Kvastur</div>
+              <p class="infobox-subtitle"></p>
+            </div>
+
+            <img src="../../../assets/screens/Kvastur.jpg" class="infobox-image">
+
+            <section class="infobox-section">
+
+              <h3>General</h3>
+
+              <div class="kv">
+                <div class="kv-row">
+                  <div class="kv-key">Prefab</div>
+                  <div class="kv-value"><code>OTAB_Kvastur</code></div>
+                </div>
+                <div class="kv-row">
+                  <div class="kv-key">Pack</div>
+                  <div class="kv-value">Forest</div>
+                </div>
+                <div class="kv-row">
+                  <div class="kv-key">Type</div>
+                  <div class="kv-value">Creature</div>
+                </div>
+              </div>
+
+            </section>
+
+            <section class="infobox-section">
+              <h3>
+                &lt;Clone&gt;
+              </h3>
+              <div class="kv">
+                <div class="kv-row">
+                  <div class="kv-key">Based on</div>
+                  <div class="kv-value"><code>BogWitchKvastur</code></div>
+                </div>
+                <div class="kv-row">
+                  <div class="kv-key">Scale</div>
+                  <div class="kv-value">1</div>
+                </div>
+                <div class="kv-row">
+                  <div class="kv-key">Max health</div>
+                  <div class="kv-value">100%</div>
+                </div>
+              </div>
+            </section>
+
+            <section class="infobox-section">
+
+              <h3>
+                &lt;Character&gt;
+                <span class="component-mode patch">Patch</span>
+              </h3>
+
+              <div class="kv">
+                <div class="kv-row">
+                  <div class="kv-key">Group</div>
+                  <div class="kv-value">'object'</div>
+                </div>
+                <div class="kv-row">
+                  <div class="kv-key">Faction</div>
+                  <div class="kv-value"><span class="muted">Dvergr</span></div>
+                </div>
+                <div class="kv-row">
+                  <div class="kv-key">Attack tamed</div>
+                  <div class="kv-value"><span class="good">Never ever</span></div>
+                </div>
+                <div class="kv-row">
+                  <div class="kv-key">Attacked by tamed</div>
+                  <div class="kv-value"><span class="good">Never ever</span></div>
+                </div>
+                <div class="kv-row">
+                  <div class="kv-key">Attack player</div>
+                  <div class="kv-value"><span class="good">Never ever</span></div>
+                </div>
+                <div class="kv-row">
+                  <div class="kv-key">Attacked by player</div>
+                  <div class="kv-value"><span class="good">Never ever</span></div>
+                </div>
+                <div class="kv-row">
+                  <div class="kv-key">Attack group</div>
+                  <div class="kv-value"><span class="good">Never ever</span></div>
+                </div>
+                <div class="kv-row">
+                  <div class="kv-key">Attacked by group</div>
+                  <div class="kv-value"><span class="good">Never ever</span></div>
+                </div>
+                <div class="kv-row">
+                  <div class="kv-key">Attack faction</div>
+                  <div class="kv-value"><span class="good">Never ever</span></div>
+                </div>
+                <div class="kv-row">
+                  <div class="kv-key">Attacked by faction</div>
+                  <div class="kv-value"><span class="good">Never ever</span></div>
+                </div>
+              </div>
+
+            </section>
+
+            <section class="infobox-section">
+
+              <h3>
+                &lt;MonsterAI&gt;
+                <span class="component-mode patch">Patch</span>
+              </h3>
+
+              <div class="kv">
+                <div class="kv-row">
+                  <div class="kv-key">Consume range</div>
+                  <div class="kv-value">0.1 m</div>
+                </div>
+                <div class="kv-row">
+                  <div class="kv-key">Search range</div>
+                  <div class="kv-value">10 m <span class="muted">(every 10 s)</span></div>
+                </div>
+                <div class="kv-row">
+                  <div class="kv-key">Stay near spawn</div>
+                  <div class="kv-value"><span class="yes">☑ Yes</span></div>
+                </div>
+              </div>
+
+              <h3>Food</h3>
+              <ul class="mini-list">
+                <li><span class="warn">Anything on the ground</span></li>
+              </ul>
+
+            </section>
+
+            <section class="infobox-section">
+              <h3>
+                &lt;GrowUp&gt;
+                <span class="component-mode remove">Remove</span>
+              </h3>
+            </section>
+
+            <section class="infobox-section">
+
+              <h3>
+                &lt;Tameable&gt;
+                <span class="component-mode patch">Patch</span>
+              </h3>
+
+              <div class="kv">
+                <div class="kv-row">
+                  <div class="kv-key">Taming time</div>
+                  <div class="kv-value">–</div>
+                </div>
+                <div class="kv-row">
+                  <div class="kv-key">Fed duration</div>
+                  <div class="kv-value">–</div>
+                </div>
+                <div class="kv-row">
+                  <div class="kv-key">Commandable</div>
+                  <div class="kv-value"><span class="yes">☑ Yes</span></div>
+                </div>
+                <div class="kv-row">
+                  <div class="kv-key">Interactable</div>
+                  <div class="kv-value">Always</div>
+                </div>
+                <div class="kv-row">
+                  <div class="kv-key">Required global keys</div>
+                  <div class="kv-value">–</div>
+                </div>
+              </div>
+
+            </section>
+
+            <section class="infobox-section">
+
+              <h3>
+                &lt;Procreation&gt;
+                <span class="component-mode remove">Remove</span>
+              </h3>
+
+            </section>
+          </div>
+        </aside>
+      </div>
+      <footer class="footer">
+        <p>
+          OTAB is an unofficial Valheim mod. 
+          Valheim and all original assets belong to Iron Gate AB.
+          <a href="/otab-wiki/legal/disclaimer.html">Disclaimer</a>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
