@@ -400,16 +400,21 @@ code {
 
 
 
-
 .hover-image {
   position: relative;
 }
-
+.hover-image::after {
+  content: "hover";
+  position: absolute;
+  bottom: 6px;
+  right: 8px;
+  font-size: 10px;
+  color: #aaa;
+}
 .hover-image img {
   display: block;
   width: 100%;
 }
-
 .hover-image .hover {
   position: absolute;
   top: 0;
@@ -417,7 +422,6 @@ code {
   opacity: 0;
   transition: opacity 0.2s ease;
 }
-
 .hover-image:hover .hover {
   opacity: 1;
 }
