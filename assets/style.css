@@ -16,6 +16,11 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -38,9 +43,15 @@ a:not([href]) {
   cursor: default;
 }
 
-.page {
+.layout {
   min-height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
+.page {
   max-width: 1300px;
+  width: 100%;
   margin: 0 auto;
   padding: 24px;
   display: grid;
@@ -52,6 +63,16 @@ a:not([href]) {
 .content,
 .sidebar {
   min-width: 0;
+}
+
+.footer {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 24px 24px;
+  border-top: 1px solid var(--line);
+  font-size: 0.85rem;
+  color: var(--muted);
 }
 
 .article {
@@ -375,14 +396,5 @@ code {
   height: auto;
   display: block;
   border-bottom: 1px solid var(--line);
-}
-
-.footer-note {
-  grid-column: 1 / -1;
-  margin-top: 50px;
-  padding-top: 12px;
-  border-top: 1px solid var(--line);
-  color: var(--muted);
-  font-size: 0.85rem;
 }
 
