@@ -356,7 +356,7 @@ code {
   width: 64px;
   height: 64px;
   display: block;
-  margin: 0 auto 10px auto;
+  margin: 0 0 10px;
 }
 .infobox-image {
   width: 100%;

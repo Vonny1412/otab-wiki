@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>OTAB - Greydwarf Bud</title>
+    <title>OTAB - Neck Egg</title>
     <link rel="stylesheet" href="../../../assets/style.css">
   </head>
   <body>
@@ -15,105 +15,77 @@
           <span class="sep">›</span>
           <a href="../../../Data.html">Data</a>
           <span class="sep">›</span>
-          <a href="../../Forest_GreydwarfFamily.html">Forest – Greydwarf Family</a>
+          <a href="../../Forest.html">Forest</a>
           <span class="sep">›</span>
           <span class="current">Eggs</span>
           <span class="sep">›</span>
-          <span class="current">Greydwarf Bud</span>
+          <span class="current">(Chicken) Egg</span>
         </nav>
 
-        <h1>Greydwarf Bud</h1>
+        <h1>(Chicken) Egg</h1>
         <div class="badge-row">
           <span class="badge good">Straight growth</span>
           <span class="badge warn">Grow time: 30 min</span>
-          <span class="badge bad">Defeated: The Elder</span>
+          <span class="badge bad">Requires: Fire, Roof, Cover</span>
+          <span class="badge bad">Defeated: Yagluth</span>
         </div>
         <div class="badge-row">
-          <span class="badge">Result: <a href="../Creatures/Greydwarf.html">Greydwarf</a> (100%)</span>
+          <span class="badge">Result: <a href="../Offsprings/Chicken.html">Chicken</a> (100%)</span>
         </div>
 
         <h2>Overview</h2>
         <p>
-          <strong>Greydwarf Bud</strong> is a hatchable bud produced by
-          <strong><a href="../Creatures/Greydwarf_Elite.html">Greydwarf Brute</a></strong>
-          or <strong><a href="../Creatures/Greydwarf_Shaman.html">Greydwarf Shaman</a></strong>.
-          It always grows into a
-          <strong><a href="../Creatures/Greydwarf.html">Greydwarf</a></strong>.
+          <strong>Chicken</strong> is a hatchable egg laid by
+          <strong><a href="../Creatures/Hen.html">Hen</a></strong>.
+          It produces a
+          <strong><a href="../Offsprings/Chicken.html">Chicken</a></strong>.
         </p>
         <p>
-          Unlike animal eggs, Buds are part of the unusual reproduction of the <strong>Greydwarf Family</strong>.
+          The Chicken always emerges tamed.
+        </p>
+
+        <h2>Hatching</h2>
+        <p>
+          Chicken Eggs takes <strong>30 minutes</strong> to fully grow.
         </p>
 
         <h2>Environment</h2>
         <p>
-          Greydwarf Buds do not require any special environment to grow.
-          They can hatch anywhere and do not need water, fire, shelter, or biome-specific conditions.
+          todo
         </p>
 
         <h2>Requirements</h2>
         <p>
-          Greydwarf Buds require <strong>The Elder</strong> to be defeated before they can grow.
+          in vanilla valheim chicken eggs can only be bought after yagluth has been defeated.
+          otab extends this restriction: chicken eggs will only hatch after yagluth has been defeated
         </p>
-
-        <h2>Notes</h2>
-        <div class="note">
-          <p>
-            The global key requirement helps prevent cross-server exploitation.
-            Buds brought from another world should not bypass the intended progression.
-          </p>
-        </div>
 
       </main>
 
       <aside class="sidebar" id="sidebar">
         <div class="infobox">
           <div class="infobox-head">
-            <div class="infobox-title">Greydwarf Bud</div>
-            <p class="infobox-subtitle"><i>Faintly pulsating</i></p>
+            <img src="../../../assets/icons/ChickenEgg.png" class="infobox-icon">
+            <div class="infobox-title">(Chicken) Egg</div>
+            <p class="infobox-subtitle"><i>Keep it warm to see what comes out.. but what came first, really?</i></p>
           </div>
+
+          <img src="../../../assets/screens/ChickenEgg.jpg" class="infobox-image">
 
           <section class="infobox-section">
             <h3>General</h3>
             <div class="kv">
               <div class="kv-row">
                 <div class="kv-key">Prefab</div>
-                <div class="kv-value"><code>OTAB_GreydwarfBud</code></div>
+                <div class="kv-value"><code>ChickenEgg</code></div>
               </div>
               <div class="kv-row">
                 <div class="kv-key">Pack</div>
-                <div class="kv-value">Forest – Greydwarf Family</div>
+                <div class="kv-value">Forest</div>
               </div>
               <div class="kv-row">
                 <div class="kv-key">Type</div>
                 <div class="kv-value">Egg</div>
-              </div>
-            </div>
-          </section>
-
-          <section class="infobox-section">
-            <h3>
-              &lt;Clone&gt;
-            </h3>
-            <div class="kv">
-              <div class="kv-row">
-                <div class="kv-key">Based on</div>
-                <div class="kv-value"><code>AncientSeed</code></div>
-              </div>
-              <div class="kv-row">
-                <div class="kv-key">Item type</div>
-                <div class="kv-value">Misc</div>
-              </div>
-              <div class="kv-row">
-                <div class="kv-key">Scale</div>
-                <div class="kv-value">1.6</div>
-              </div>
-              <div class="kv-row">
-                <div class="kv-key">Weight</div>
-                <div class="kv-value">20</div>
-              </div>
-              <div class="kv-row">
-                <div class="kv-key">Teleportable</div>
-                <div class="kv-value"><span class="yes">☑ Yes</span></div>
               </div>
             </div>
           </section>
@@ -126,11 +98,11 @@
             <div class="kv">
               <div class="kv-row">
                 <div class="kv-key">Max stack size</div>
-                <div class="kv-value">10</div>
+                <div class="kv-value">20 <span class="muted">(Default)</span></div>
               </div>
               <div class="kv-row">
                 <div class="kv-key">Max quality</div>
-                <div class="kv-value">3</div>
+                <div class="kv-value">1</div>
               </div>
             </div>
           </section>
@@ -138,7 +110,7 @@
           <section class="infobox-section">
             <h3>
               &lt;Floating&gt;
-              <span class="component-mode remove">Remove</span>
+              <span class="component-mode inherit">Inherit</span>
             </h3>
           </section>
 
@@ -158,15 +130,15 @@
               </div>
               <div class="kv-row">
                 <div class="kv-key">Nearby fire</div>
-                <div class="kv-value"><span class="no">☒ No</span></div>
+                <div class="kv-value"><span class="yes">☑ Yes</span></div>
               </div>
               <div class="kv-row">
                 <div class="kv-key">Under roof</div>
-                <div class="kv-value"><span class="no">☒ No</span></div>
+                <div class="kv-value"><span class="yes">☑ Yes</span></div>
               </div>
               <div class="kv-row">
                 <div class="kv-key">Cover requirement</div>
-                <div class="kv-value">0%</div>
+                <div class="kv-value">70%</div>
               </div>
               <div class="kv-row">
                 <div class="kv-key">Required liquid</div>
@@ -180,13 +152,13 @@
 
             <h3>Required global keys</h3>
             <ul class="mini-list">
-              <li>Defeated: The Elder</li>
+              <li>Defeated: Yagluth</li>
             </ul>
 
             <h3>Grown result</h3>
             <ul class="plain-list">
               <li>
-                <strong><a href="../Creatures/Greydwarf.html">Greydwarf</a></strong>
+                <strong><a href="../Offsprings/Chicken.html">Chicken</a></strong>
                 <span class="muted">(100%)</span>
                 <ul class="mini-list">
                   <li>Tamed: <span class="yes">☑ Yes</span></li>
