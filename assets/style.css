@@ -39,6 +39,7 @@ a:not([href]) {
 }
 
 .page {
+  min-height: 100vh;
   max-width: 1300px;
   margin: 0 auto;
   padding: 24px;
@@ -377,9 +378,11 @@ code {
 }
 
 .footer-note {
-  margin-top: 40px;
+  grid-column: 1 / -1;
+  margin-top: 50px;
   padding-top: 12px;
   border-top: 1px solid var(--line);
   color: var(--muted);
   font-size: 0.85rem;
 }
+
