@@ -9,6 +9,7 @@
   --good: #a6e3a1;
   --bad: #f38ba8;
   --warn: #f9e2af;
+  --special: #b58df3;
 }
 
 * {
@@ -156,6 +157,10 @@ p {
   border-color: rgba(243, 139, 168, 0.35);
 }
 
+.badge.special {
+  border-color: rgba(179, 139, 243, 0.35);
+}
+
 .infobox {
   background: var(--panel);
   border: 1px solid var(--line);
@@ -271,6 +276,9 @@ p {
 }
 .bad {
   color: var(--bad);
+}
+.special {
+  color: var(--special);
 }
 .faded {
   opacity: 0.6;
