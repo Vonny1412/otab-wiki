@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>OTAB – Personal Notes</title>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <div class="page page-pack-overview">
+        <main class="content article">
+          <nav class="breadcrumb">
+            <a href="index.html">Of Taming and Breeding</a>
+            <span class="sep">›</span>
+            <span class="current">Personal Notes</span>
+          </nav>
+
+          <h1>Developer Notes – Personal Background</h1>
+
+          <p class="lede">
+            A personal note about how OTAB started, how the project evolved,
+            and how AI-assisted tools were used during development.
+          </p>
+
+          <p>
+            As a teenager I started programming with the Warcraft III map editor.
+            Later I built my first personal websites and small tools.
+          </p>
+
+          <p>
+            For the game World of Warcraft I created small addons to customize the UI
+            the way I wanted to play.
+          </p>
+
+          <p>
+            At some point I even wrote my own comic book reader for <code>.cbr</code>
+            and <code>.cbz</code> files because other readers were simply too heavy
+            for my old and rather terrible tablet.
+          </p>
+
+          <p>
+            I also once built a small 3D rendering engine in PHP that was able to
+            render <strong>one whole frame</strong> — mostly as an excuse to learn
+            algebra that I never had the chance to properly study in school.
+          </p>
+
+          <p>
+            For the game <em>Grim Dawn</em> I created a small tool to manage multiple
+            in-game stashes. The code design was honestly quite ugly — it relied on
+            two third-party injection tools because I had no idea how to hook into
+            DirectX rendering or how to write proper C++ code.
+          </p>
+
+          <p>
+            I am not a trained software developer. Programming is simply something
+            I enjoy doing. I might struggle to visualize something simple like a tree
+            with an apple in my head — but a multidimensional array passing through a
+            generic method somehow makes perfect sense to me.
+          </p>
+
+          <p>
+            Over time I picked up knowledge in many different languages:
+            PHP, JavaScript, Lua, SQL, Batch, BASIC, C#, and Java (for Android).
+            All of it purely out of curiosity and hobby interest.
+          </p>
+
+          <p>
+            And now, through OTAB, Unity has joined that list as well.
+          </p>
+
+          <p>
+            For many years <strong>Stack Overflow</strong> was my primary place to
+            learn things when I got stuck.
+          </p>
+
+          <p>
+            Today, tools like AI exist.
+          </p>
+
+          <h2>Why I started OTAB</h2>
+
+          <p>
+            The mod <em>AllTameable Taming Overhaul</em> is a fantastic mod and deserves
+            a lot of credit. However, for my own experiments it did not provide the
+            level of configurability I was looking for.
+          </p>
+
+          <p>
+            Creatures in Valheim are very different from each other. They live in
+            different environments, have different AI behaviors, appearances, factions,
+            groups, and even their own lore background. Because of this I wanted a
+            system that allowed creatures to be configured in a much more detailed way.
+          </p>
+
+          <p>
+            OTAB originally started as a very small personal mod. At that time I had
+            very little Unity knowledge and did not use AI at all. Much of the early
+            code relied heavily on reflection, without delegates, and used a large
+            number of <code>WeakReference</code> objects.
+          </p>
+
+          <p>
+            Later I began a side project called <strong>InternalsAPI</strong>, which
+            allowed me to generate interfaces to internal methods from arbitrary
+            assemblies. Around that time I also started experimenting with
+            AI-assisted tools.
+          </p>
+
+          <p>
+            AI helped me understand how simple reflection-based approaches could be
+            replaced with faster delegate-based solutions. Over time I learned how to
+            work with Unity components in a more natural way, and most of the earlier
+            <code>WeakReference</code> usage disappeared.
+          </p>
+
+          <p>
+            I also spent a lot of time studying the Valheim source code. In some cases
+            I even asked AI to analyze parts of the code to help me understand the
+            “dialect” or coding style that the Valheim developers seem to follow.
+            This helped me shape OTAB so that it feels closer to the original game's
+            design philosophy.
+          </p>
+
+          <p>
+            AI was also helpful when discussing design decisions, especially when
+            fine-tuning creature behavior and configuration data in order to keep OTAB
+            aligned with the vanilla Valheim experience.
+          </p>
+
+          <p>Typical questions I asked AI included things like:</p>
+
+          <blockquote>
+            <p>Which version of this method is more performant, A or B?</p>
+            <p>I don't yet understand how this system works — could you show me a simple example?</p>
+            <p>Why is this done this way in the Valheim code? Wouldn't another approach be better?</p>
+            <p>How could this part of the code be optimized?</p>
+            <p>Let's talk about creature X, its Valheim lore, and possible real-world inspiration.</p>
+            <p>Is there any logical flaw in this code section?</p>
+            <p>Does this behavior remain consistent with vanilla logic?</p>
+            <p>Could you help me rewrite this text in proper English?</p>
+          </blockquote>
+
+          <h2>Learning with AI</h2>
+
+          <p>
+            AI was never used in the sense of “generate everything and ship it”.
+            Instead, I treated it as a learning tool. I reviewed everything that was
+            generated, learned from it, and often rewrote or discarded parts that did
+            not fit the project.
+          </p>
+
+          <p>
+            In that sense, AI became more like a discussion partner, a mentor, and
+            sometimes even a small source of motivation during moments when progress
+            felt difficult.
+          </p>
+
+          <p>
+            Even this text was written with the help of AI so that what I want to say
+            is easier for others to understand.
+          </p>
+
+          <p>
+            Over time OTAB grew into a project that I genuinely fell in love with.
+          </p>
+
+          <p>
+            Inspired by the Valheim codebase, the game itself, and the many amazing
+            mods created by other modders, I hope that OTAB can contribute something
+            meaningful back to the community.
+          </p>
+
+          <h2>Design Philosophy – Staying close to Vanilla</h2>
+
+          <p>
+            From the beginning, OTAB was intended to stay as close as possible to the
+            spirit of vanilla Valheim.
+          </p>
+
+          <p>
+            The developers of Valheim clearly invested a lot of care into many aspects
+            of the game: smooth animations, satisfying sound design, logical progression
+            systems, and a world that draws inspiration from both mythology and
+            real-world folklore. A great deal of thoughtful work went into shaping that
+            experience.
+          </p>
+
+          <p>
+            With OTAB, my intention was never to ignore or override that work, but
+            rather to respect it.
+          </p>
+
+          <p>
+            During development I often spent hours discussing creature behavior,
+            progression, and lore consistency — sometimes even with AI-assisted tools —
+            asking questions such as: <em>How might the original developers have
+            approached this creature if it had been tameable?</em> or
+            <em>What behavior would need to change in order for taming to make sense
+            within the world of Valheim?</em>
+          </p>
+
+          <p>
+            Valheim deliberately does <strong>not</strong> make every creature tameable,
+            and that limitation felt intentional. Because of that, OTAB introduces its
+            own set of restrictions and progression rules rather than simply enabling
+            taming everywhere.
+          </p>
+
+          <p>
+            Many creatures can only be tamed <strong>after the biome's boss has been
+            defeated for the first time</strong>, preserving the natural progression of
+            the game.
+          </p>
+
+          <p>Even when a creature technically <em>can</em> be tamed, the question often remains:</p>
+
+          <blockquote>
+            <p><em>Does it actually make sense?</em></p>
+          </blockquote>
+
+          <p>
+            This is why systems such as <strong>starvation</strong> and
+            <strong>aggression</strong> were introduced.
+          </p>
+
+          <p>For example:</p>
+          <ul class="plain-list">
+            <li><strong>Deathsquitos</strong> can be tamed, but if they become hungry they may attack the player.</li>
+            <li><strong>Fulings</strong> can be bribed and persuaded to join the player, but doing so can cost a significant amount of coins.</li>
+          </ul>
+
+          <p>
+            These systems exist to preserve the feeling that creatures remain creatures
+            — not simply obedient pets.
+          </p>
+
+          <p>
+            I intentionally chose <strong>not</strong> to include HP loss from
+            starvation, as that would have pushed the system into a much more punishing
+            or hardcore direction than intended.
+          </p>
+
+          <p>
+            The goal was always to expand Valheim's systems while keeping them
+            believable within the original game's design philosophy.
+          </p>
+
+          <h2>Data-driven Design</h2>
+
+          <p>
+            Another major influence on OTAB was the mod <strong>Wacky’s Database</strong>,
+            which demonstrated how powerful and structured a data-driven approach can be.
+          </p>
+
+          <p>
+            Through that mod I learned how much flexibility can be achieved when
+            gameplay data is stored in structured configuration files rather than being
+            hardcoded directly in the mod.
+          </p>
+
+          <p>
+            Because of this, OTAB stores its default gameplay data in
+            <strong>YAML-based data packs</strong>.
+          </p>
+
+          <p>These packs can be enabled or disabled by:</p>
+          <ul class="plain-list">
+            <li>local players</li>
+            <li>server administrators</li>
+          </ul>
+
+          <p>
+            The YAML files can also be modified directly, allowing servers to adjust
+            creature behavior and mechanics without touching the mod code itself.
+          </p>
+
+          <p>
+            The default OTAB data tries to remain <strong>as vanilla-like as possible</strong>,
+            so that it can serve as a foundation for many different play styles.
+          </p>
+
+          <p>For example:</p>
+          <ul class="plain-list">
+            <li>Some server administrators may want to create <strong>hardcore servers</strong>.</li>
+            <li>Others may prefer <strong>fun or chaotic server setups</strong>.</li>
+            <li>Many players simply want the <strong>vanilla experience with a few additional possibilities</strong>.</li>
+          </ul>
+
+          <p>
+            Another important goal was to make OTAB approachable even for players who
+            are normally hesitant to install mods because they fear that mods might
+            break the original game experience.
+          </p>
+
+          <p>
+            Even though OTAB is not an official expansion, I always tried to ensure
+            that its changes still <strong>feel like Valheim</strong> — logical,
+            progression-based, slightly mysterious, and full of small surprises.
+          </p>
+
+          <p>
+            For everything beyond that, the YAML data can be adjusted.
+          </p>
+
+          <h2>Multiplayer and Server Authority</h2>
+
+          <p>
+            In OTAB the <strong>server defines the active gameplay configuration</strong>.
+          </p>
+
+          <p>
+            This decision was also made with players in mind who are normally hesitant
+            to install mods. Personally, I never liked having to maintain separate game
+            folders for different modded servers.
+          </p>
+
+          <p>
+            OTAB tries to avoid that problem.
+          </p>
+
+          <p>
+            Players can keep their own local OTAB data packs — either the original ones
+            or customized versions. When joining a server that also runs OTAB, the
+            server's configuration is automatically loaded instead.
+          </p>
+
+          <p>
+            If the server administrator allows it, these server configurations can also
+            be cached locally.
+          </p>
+
+          <p>
+            The player's own local data remains untouched.
+          </p>
+
+          <p>
+            When leaving the server, OTAB restores all modified creatures from internal
+            backups so that the local game state returns to normal.
+          </p>
+
+          <p>
+            This system also allows OTAB to cooperate with other creature-modifying
+            mods. For example, if a server uses <strong>DoOrDieMonsters</strong>, the
+            administrator can create custom OTAB YAML configurations for those creatures.
+          </p>
+
+          <p>
+            Any creatures that already exist before OTAB loads its data are treated as
+            "original" creatures by OTAB and are backed up and restored later.
+          </p>
+
+          <p>
+            Of course the client must still have those other mods installed.
+          </p>
+
+          <p>
+            Because of that, the server-authoritative system is only
+            <strong>partially useful</strong>, and I am fully aware of that. Still, I
+            chose this path, stayed on it, and simply want to see where it leads.
+          </p>
+
+          <p>
+            Data transmitted from the server to the client is encrypted. The client
+            receives a key as well, which is also encrypted.
+          </p>
+
+          <p>
+            This system is <strong>not meant to be highly secure</strong>. Its purpose
+            is simply to avoid accidental spoilers if a server administrator has
+            configured something special in the OTAB data packs.
+          </p>
+
+          <p>
+            Servers running OTAB require clients to also have OTAB installed.
+          </p>
+
+          <p>
+            However, a player who has OTAB installed can still join servers that do
+            <strong>not</strong> run OTAB.
+          </p>
+
+          <p>
+            In that case OTAB switches into a <strong>passive vanilla mode</strong>.
+          </p>
+
+          <p>In this mode only UI-related features remain active, such as displaying:</p>
+          <ul class="plain-list">
+            <li>consumable items</li>
+            <li>fed timers</li>
+            <li>pregnancy durations</li>
+          </ul>
+
+          <p>
+            These are features similar to other client-side quality-of-life mods.
+          </p>
+
+          <h2>Final Words</h2>
+
+          <p>
+            OTAB started as a small experiment.
+          </p>
+
+          <p>
+            Over time it became a project that taught me a lot — about programming,
+            about design, and about the surprisingly complex behavior of virtual
+            creatures.
+          </p>
+
+          <p>
+            If OTAB can add a few new stories, surprises, or interesting gameplay
+            moments to Valheim worlds, then the project has already achieved more than
+            I originally hoped for.
+          </p>
+        </main>
+      </div>
+      <footer class="footer">
+        <p>
+          OTAB is an unofficial Valheim mod.
+          Valheim and all original assets belong to Iron Gate AB.
+          <a href="/otab-wiki/legal/disclaimer.html">Disclaimer</a>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
