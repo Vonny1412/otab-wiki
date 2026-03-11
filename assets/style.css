@@ -284,6 +284,10 @@ p {
   margin: 4px 0;
 }
 
+.content .plain-list {
+  margin: 0 0 14px;
+}
+
 .muted {
   color: var(--muted);
 }
