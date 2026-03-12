@@ -269,13 +269,18 @@ p {
 
 .kv-key {
   color: var(--muted);
-  font-size: 0.82rem;
+  font-size: 0.85rem;
 }
 
 .kv-value {
   color: var(--text);
-  font-size: 0.85rem;
+  font-size: 0.87rem;
   word-break: break-word;
+}
+
+.infobox .mini-list,
+.infobox .plain-list {
+  font-size: 0.85rem;
 }
 
 .mini-list,
