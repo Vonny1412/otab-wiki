@@ -257,7 +257,7 @@ p {
 .kv {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 8px;
+  gap: 4px;
 }
 
 .kv-row {
@@ -279,25 +279,6 @@ p {
   word-break: break-word;
 }
 
-.infobox .mini-list,
-.infobox .plain-list {
-  font-size: 0.85rem;
-}
-
-.mini-list,
-.plain-list {
-  margin: 0;
-  padding-left: 18px;
-}
-
-.mini-list li,
-.plain-list li {
-  margin: 4px 0;
-}
-
-.content .plain-list {
-  margin: 0 0 14px;
-}
 
 .muted {
   color: var(--muted);
@@ -322,6 +303,30 @@ p {
 }
 .faded {
   opacity: 0.6;
+}
+
+.mini-list,
+.plain-list {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.mini-list li,
+.plain-list li {
+  margin: 4px 0;
+}
+
+.content .plain-list {
+  margin: 0 0 14px;
+}
+
+.infobox .mini-list,
+.infobox .plain-list {
+  font-size: 0.85rem;
+}
+.infobox .mini-list li,
+.infobox .plain-list li {
+    margin: 2px 0;
 }
 
 details {
