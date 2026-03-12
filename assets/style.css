@@ -310,6 +310,9 @@ p {
   margin: 0;
   padding-left: 18px;
 }
+.plain-list .mini-list  {
+  margin-bottom: 4px 0;
+}
 
 .mini-list li,
 .plain-list li {
