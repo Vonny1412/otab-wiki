@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Creature Behavior, Hunger & Interaction</title>
+    <link rel="stylesheet" href="../assets/style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
+  </head>
+
+  <body>
+    <div class="layout">
+      <div class="page">
+        <main class="content article">
+
+          <nav class="breadcrumb">
+            <a href="../index.html">Of Taming and Breeding</a>
+            <span class="sep">›</span>
+            <a href="../Systems.html">Systems</a>
+            <span class="sep">›</span>
+            <span class="current">Creature Behavior, Hunger & Interaction</span>
+          </nav>
+
+          <h1>Creature Behavior, Hunger & Interaction</h1>
+
+          <p class="lede">
+            OTAB expands creature behavior with additional rules for feeding,
+            hunger, aggression, interaction and social behavior.
+          </p>
+
+          <p>
+            The goal is not to replace Valheim's creature AI, but to make
+            creatures feel more reactive, more believable and less predictable
+            in situations where vanilla behavior would otherwise feel too simple.
+          </p>
+
+          <h2>Behavior That Feels Intentional</h2>
+
+          <p>
+            Vanilla creatures often behave in ways that are technically correct,
+            but also very deterministic and easy to predict.
+          </p>
+
+          <p>
+            OTAB builds on that foundation by adding small behavior rules that
+            can change how creatures react depending on hunger, taming state,
+            nearby food, interaction and environmental conditions.
+          </p>
+
+          <p>
+            The result is not meant to be realistic for its own sake, but to
+            create behavior that players can observe, understand and plan around.
+          </p>
+
+          <h2>Feeding Is Separate from Taming</h2>
+
+          <p>
+            One important OTAB design rule is that eating, being fed, taming and
+            reproduction are not all treated as the same thing.
+          </p>
+
+          <p>
+            Creatures may still eat food they find nearby, but only
+            <strong>player-dropped food</strong> can count for systems such as:
+          </p>
+
+          <ul>
+            <li>taming progress</li>
+            <li>fed timers</li>
+            <li>reproduction eligibility</li>
+          </ul>
+
+          <p>
+            This prevents creatures from taming or breeding accidentally just
+            because food happened to be nearby.
+          </p>
+
+          <p>
+            In OTAB, taming and breeding are meant to remain intentional player
+            actions.
+          </p>
+
+          <h2>Food Search Feels Less Robotic</h2>
+
+          <p>
+            In vanilla behavior, creatures usually move to the nearest food in a
+            very predictable way.
+          </p>
+
+          <p>
+            OTAB can replace this with a weighted food search system where
+            nearby food is more likely to be chosen, but not always guaranteed.
+          </p>
+
+          <p>
+            This makes feeding look less synchronized and helps groups of
+            creatures spread out more naturally.
+          </p>
+
+          <h2>Hungry and Starving Are Different</h2>
+
+          <p>
+            OTAB distinguishes between creatures that are simply
+            <strong>hungry</strong> and creatures that are truly
+            <strong>starving</strong>.
+          </p>
+
+          <ul>
+            <li><strong>Fed</strong> means the fed timer is still active</li>
+            <li><strong>Hungry</strong> means the fed timer has expired</li>
+            <li><strong>Starving</strong> means the creature has remained hungry for much longer</li>
+          </ul>
+
+          <p>
+            This allows hunger to become a gradual behavioral change instead of
+            an immediate punishment.
+          </p>
+
+          <p>
+            A creature may remain manageable while hungry, but begin to change
+            its behavior once starvation starts.
+          </p>
+
+          <h2>Starving Creatures Prioritize Food</h2>
+
+          <p>
+            When a creature becomes starving, OTAB makes food a higher priority
+            than combat.
+          </p>
+
+          <p>
+            This means a starving creature may stop attacking and instead rush
+            to consume food on the ground.
+          </p>
+
+          <p>
+            This behavior is important because it allows starvation-based
+            aggression to naturally calm down once food becomes available.
+          </p>
+
+          <div class="note">
+            <p>
+              Food consumed from the ground can end starvation even if that food
+              does not count as valid feeding for taming or reproduction.
+            </p>
+          </div>
+
+          <h2>Hungry Aggression Is More Dangerous</h2>
+
+          <p>
+            A creature that is hungry but not yet starving may still have enough
+            energy to continue fighting instead of looking for food.
+          </p>
+
+          <p>
+            Because of this, hunger-based aggression is usually harder to stop
+            than starvation-based aggression.
+          </p>
+
+          <p>
+            In practice, this means some creatures may calm down when they are
+            starving and find food, while others may continue fighting as long
+            as they are only hungry.
+          </p>
+
+          <h2>Situational Aggression</h2>
+
+          <p>
+            OTAB allows creatures to behave differently depending on their
+            condition.
+          </p>
+
+          <p>
+            A creature might:
+          </p>
+
+          <ul>
+            <li>remain peaceful while fed</li>
+            <li>become dangerous when starving</li>
+            <li>tolerate others only under certain conditions</li>
+            <li>behave differently toward players, tamed creatures or wild creatures</li>
+          </ul>
+
+          <p>
+            This is why some tameable creatures in OTAB are still not fully
+            safe. They may be companions most of the time, but become unstable
+            under stress.
+          </p>
+
+          <h2>Interaction Can Be Lost When Hunger Starts</h2>
+
+          <p>
+            Hunger does not only affect aggression. It can also affect how much
+            control the player has over a creature.
+          </p>
+
+          <p>
+            Depending on the creature, becoming hungry may disable interactions
+            such as:
+          </p>
+
+          <ul>
+            <li>petting</li>
+            <li>commanding</li>
+            <li>renaming</li>
+          </ul>
+
+          <p>
+            This gives hunger visible gameplay consequences and prevents feeding
+            from becoming a purely decorative mechanic.
+          </p>
+
+          <h2>Hungry Creatures May Stop Following Orders</h2>
+
+          <p>
+            If a creature is currently following a player or staying at a patrol
+            point, OTAB may clear those command states once hunger begins.
+          </p>
+
+          <p>
+            In other words, a hungry creature may stop following orders and
+            behave more independently again.
+          </p>
+
+          <h2>Return to Spawn or Wander Off</h2>
+
+          <p>
+            After losing commands, creatures do not all behave the same way.
+          </p>
+
+          <p>
+            If a creature is still near its original home area, it may return
+            there.
+          </p>
+
+          <p>
+            If it is too far away, or if that behavior is disabled for the
+            creature, it may simply begin to wander around on its own.
+          </p>
+
+          <p>
+            This reflects the idea that a stressed, hungry or disobedient
+            creature may no longer reliably stay where the player wants it to.
+          </p>
+
+          <h2>Behavior Comes from Small Combined Rules</h2>
+
+          <p>
+            OTAB does not rely on one large scripted AI overhaul.
+          </p>
+
+          <p>
+            Instead, behavior emerges from several smaller layers such as:
+          </p>
+
+          <ul>
+            <li>feeding state</li>
+            <li>aggression rules</li>
+            <li>interaction permissions</li>
+            <li>reproduction restrictions</li>
+            <li>environmental checks</li>
+          </ul>
+
+          <p>
+            This allows creatures to feel more varied and more situational
+            without becoming random or impossible to understand.
+          </p>
+
+          <h2>Why This Matters</h2>
+
+          <p>
+            OTAB's creature behavior systems are meant to make creatures feel
+            more alive without turning them into chaos machines.
+          </p>
+
+          <p>
+            The goal is to create creatures that players can learn, manage and
+            respect — not creatures that can simply be exploited through a few
+            predictable vanilla patterns.
+          </p>
+
+        </main>
+      </div>
+
+      <footer class="footer">
+        <p>
+          OTAB is an unofficial Valheim mod.
+          Valheim and all original assets belong to Iron Gate AB.
+          <a href="/otab-wiki/legal/disclaimer.html">Disclaimer</a>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
