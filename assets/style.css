@@ -269,7 +269,8 @@ p {
 
 .kv-key {
   color: var(--muted);
-  font-size: 0.85rem;
+  font-size: 0.83rem;
+  font-weight: 600;
 }
 
 .kv-value {
