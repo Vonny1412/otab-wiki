@@ -109,9 +109,11 @@ h3 {
 p {
   margin: 0 0 14px;
 }
+/*
 .article p {
   max-width: 65ch;
 }
+  */
 
 .breadcrumb {
   font-size: 0.9rem;
